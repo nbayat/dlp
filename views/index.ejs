@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-20">
+        <div class="bg-white shadow-md rounded-lg max-w-md mx-auto p-6">
+            <h1 class="text-2xl font-bold text-gray-800 text-center mb-6">YouTube Downloader</h1>
+            <form action="/download" method="POST" class="flex flex-col gap-4">
+                <input
+                    type="text"
+                    name="link"
+                    placeholder="Enter YouTube video URL"
+                    class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring focus:ring-blue-500"
+                    required
+                />
+                <button
+                    type="submit"
+                    class="bg-blue-500 text-white rounded-lg p-3 hover:bg-blue-600 transition">
+                    Download
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
